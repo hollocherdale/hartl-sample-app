@@ -25,7 +25,6 @@ class User < ActiveRecord::Base
 	end
 
 	def feed
-		#this is preliminary. see "following users" for the full implementation.
 		Micropost.from_users_followed_by(self)
 	end
 
